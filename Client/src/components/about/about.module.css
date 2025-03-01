@@ -170,8 +170,11 @@ div {
         margin-left: 30px;
         margin-right: 30px;
     }
+    .paragraph_light, .paragraph_light_isSun {
+        font-size: 14px;
+    }
     .heading_jumbo_small {
-        font-size: 34px;
+        font-size: 25px;
     }
 }
 
