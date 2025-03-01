@@ -11,8 +11,8 @@ import Work_head from "./components/work/work_head/work_head"
 import Work_content from "./components/work/work_content/work_content"
 import Showcase from './components/Showcase/ShowCase'
 import Residential from './components/work/residential/residential'
-import Login from "./components/login/Login";
-import Logout from "./components/login/Logout";
+import Login from "./components/Login/Login";
+import Logout from "./components/Login/Logout";
 import Register from './components/Register/Register'
 import Contact from "./components/contact/Contact";
 import CHouse from './components/work/CHouse/CHouse'
