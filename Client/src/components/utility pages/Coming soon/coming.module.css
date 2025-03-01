@@ -1,0 +1,14 @@
+.upcoming {
+    margin-bottom: 100px;
+}
+
+.u_head {
+    font-size: 35px;
+    font-weight: 600;
+    color: gray;
+}
+
+.u_main {
+    text-align: center;
+    color: gray;
+}

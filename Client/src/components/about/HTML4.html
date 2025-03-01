@@ -1,0 +1,45 @@
+<!-- write a program in javascript to generate area in square meter -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AreaFinder</title>
+</head>
+<body>
+    <form id="calcArea">
+        <fieldset>
+            <input type="number" placeholder="Enter width..." name="width" id="width" required>
+            <input type="number" placeholder="Enter height..." name="height" id="height" required>
+            <button type="submit" id="submit" onclick="">
+                Calculate Area
+            </button>
+        </fieldset>
+    </form>
+
+    <p>Result is : <span id="result"></span></p>
+
+    <script>
+        const form = document.getElementById('calcArea');
+        const a = document.getElementById('width');
+        const b = document.getElementById('height');
+        const res = document.getElementById('result');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const width = parseFloat(a.value);
+            const height = parseFloat(b.value);
+
+            if (!isNaN(width) && !isNaN(height)) {
+                const area = width * height;
+                result.textContent = area;
+            } else {
+                result.textContent = 'Please enter valid numbers for width and height.';
+            }
+        })
+
+    </script>
+</body>
+</html>

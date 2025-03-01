@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        font-family: Montserrat, sans-serif;
+    }
+    .form {
+        margin-top: 30vh;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    fieldset {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    
+    label {
+        font-weight: 700;
+        color: rgb(100, 100, 196);
+    }
+
+    input {
+        color: rgb(100, 100, 196);
+        margin-left: 20px;
+        width: 200px;
+        height: 30px;
+        font-size: 18px;
+        padding: 0 10px;
+        border-radius: 15px;
+        border-width: 1px;
+    }
+    select {
+        color: rgb(100, 100, 196);
+        margin-left: 20px;
+        height: 30px;
+        font-size: 18px;
+        padding: 0 10px;
+        border-radius: 15px;
+        border-width: 1px;
+    }
+
+    .input_field {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    button {
+        border-radius: 20px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border: none;
+        color: white;
+        background-color: rgb(135, 135, 255);
+        margin-top: 30px;
+    }
+</style>
+<body>
+    <form action="Submit_handler" class="form" method="POST">
+        <fieldset>
+            <legend>Basic info</legend>
+            <div class="input_field">
+                <label for="fname">First Name :</label>
+                <input type="text" />
+
+                <label for="mname">Middle Name [Optional] :</label>
+                <input type="text" />
+
+                <label for="lname">Last Name :</label>
+                <input type="text" />
+            </div>
+            <br>
+            <br>
+
+            <div class="input_field">
+                <label for="email">Email-id :</label>
+                <input type="email" />
+    
+                <label for="phone">Phone Number :</label>
+                <input type="phone" />
+    
+                <label for="age">Age :</label>
+                <input type="number" />
+            </div>
+            
+            <br>
+            <br>
+            <div class="input_field">
+                <label for="address 1">Main Address :</label>
+                <input type="text">
+        
+                <label for="address 2">Secondary Address [optional] :</label>
+                <input type="text">
+            </div>
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>About yourself</legend>
+            
+            <label>Your UG degree : </label>
+            <select name="ug degree" id="ed-01">
+                <option value="">Select your UG degree</option>
+                <option value="BCA">Bachelors of Computer Applications</option>
+                <option value="BBA">Bachelors of Business Administration</option>
+                <option value="BA">Bachelors of Arts [honors]</option>
+                <option value="BE">Bachelors of Engineering</option>
+                <option value="B.Com">Bachelors of Commerce</option>
+            </select>
+
+            <label>Your UG College Name : </label>
+            <select name="ug college" id="cl-01">
+                <option value="">Select your UG college</option>
+                <option value="BITP">Birla Institute of Technology and Science, PILANI</option>
+                <option value="BITM">Birla Institute of Technology, MESRA</option>
+                <option value="DUNC">Delhi University, North Campus</option>
+                <option value="DUSC">Delhi University, South Campus</option>
+                <option value="MU">Mumbai University</option>
+                <option value="CU">Christ University</option>
+            </select>
+
+            <br><br>
+
+            <label>Your PG Degree :</label>
+            <select name="pg degree" id="ed-02">
+                <option value="">Select your PG degree</option>
+                <option value="MCA">Masters of Computer Applications</option>
+                <option value="MBA">Masters of Business Administration</option>
+                <option value="MA">Masters of Arts [honors]</option>
+                <option value="ME">Masters of Engineering</option>
+                <option value="M.Com">Masters of Commerce</option>
+            </select>
+
+            <label>Your UG College Name : </label>
+            <select name="ug college" id="cl-01">
+                <option value="">Select your PG college</option>
+                <option value="BITP">Birla Institute of Technology and Science, PILANI</option>
+                <option value="BITM">Birla Institute of Technology, MESRA</option>
+                <option value="DUNC">Delhi University, North Campus</option>
+                <option value="DUSC">Delhi University, South Campus</option>
+                <option value="MU">Mumbai University</option>
+                <option value="CU">Christ University</option>
+            </select>
+            
+        </fieldset>
+        <center>
+        <button type="button" style="cursor: pointer;">Submit</button>
+        </center>
+    </form>
+    
+</body>
+</html>

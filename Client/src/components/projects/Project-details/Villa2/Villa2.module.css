@@ -1,0 +1,207 @@
+.projectContainer {
+    margin-top: 5vh;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projLeftC {
+    height: 80vh;
+}
+
+.imgPrev {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headImg {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 60vh;
+}
+
+.imgList {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5vh;
+    width: 95%;
+    height: 100px;
+}
+
+.imgList::-webkit-scrollbar {
+    display: none;
+}
+
+.miniImg {
+    height: 100%;
+    border-radius: 0.25rem;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.miniImg:hover {
+    transform: scale(1.1);
+}
+
+.projRightC {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+
+.scrollButton {
+    background: white;
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.imgSliderContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.p_name {
+    float: left;
+    font-size: 30px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.p_loc {
+    margin-top: 20px;
+    float: left;
+    color: gray;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.price_and_area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.p_price {
+    color: #00ce41;
+    font-size: 35px;
+    font-weight: 600;
+    margin-right: auto;
+}
+
+.p_area {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: gray;
+    margin-right: auto;
+    font-weight: 500;
+}
+
+.divider {
+    height: 1px;
+    opacity: 1;
+    outline-offset: 0px;
+    mix-blend-mode: darken;
+    background-color: #d1d1d1;
+    border-radius: 0;
+    outline: 5px #1a1b1f;
+    margin-bottom: 50px;
+}
+.divider_isSun {
+    height: 1px;
+    opacity: 1;
+    outline-offset: 0px;
+    mix-blend-mode: lighten;
+    background-color: #ddd;
+    border-radius: 0;
+    outline: 5px #ddd;
+    margin-bottom: 50px;
+}
+
+.p_pd_header {
+    font-size: 20px;
+    margin-top: -4vh;
+    color: gray;
+    font-weight: 600;
+}
+
+.p_pd_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.p_bd {
+    color: gray;
+}
+
+.p_bd_val {
+    color: gray;
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: -10px;
+}
+
+.p_desc_header {
+    font-size: 20px;
+    color: gray;
+    font-weight: 600;
+    margin-top: -4vh;
+}
+
+.scheduleTourButton {
+    background-color: #00ce41;
+    padding: 20px 30px;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .scheduleTourButton:hover {
+    background-color: #309c3b;
+  }
+  .str {
+    color: gray;
+  }
+  .str_isSun {
+    color: rgb(214, 214, 214);
+  }
+  p {
+    color: gray;
+  }
+
+@media screen and (max-width: 767px) {
+    .projectContainer {
+        margin-top: 5vh;
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
